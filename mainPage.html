@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Main | To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.mainPage.css"/>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  </head>
+  <body>
+
+  <!-- Header/NavBar : START -->
+
+  <header> 
+    <nav class="navbar navbar-expand-lg">
+
+    <!-- NavBar -->
+      <div class="d-flex h-100 w-100">
+
+        <div class="d-90 h-100 justify-content-start align-items-center d-flex">
+          <span class="navbar-brand navName" id="nameOutput">
+            <!-- Welcome, *userName* -->
+          </span>
+        </div>    
+
+        <div class="d-10 d-flex justify-content-center h-100 align-items-center"  onclick="openNav()">
+          <i class="fa-solid fa-burger"></i>
+        </div>
+
+      </div>
+
+    <!-- Side Menu -->
+      <div id="mySidenav" class="sidenav">
+        <a 
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNav()"
+        ><i class="fa-solid fa-xmark"></i></a>
+        
+        <a href="index.html">
+          <div  class="navItem d-flex align-items-center" onclick="homeBtn()">
+            <i class="fa-solid fa-house"></i><span> Home</span>
+          </div>
+        </a> 
+
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Header/NavBar : END -->
+
+  <!-- Main Content - NO TASK : START -->
+
+  <div class="mainContentPage w-10 justify-contents-center align-items-center h-100">
+    <div class="w-100 h-100 absolute d-flex align-items-center justify-contents-center">
+      <div class="d-flex align-items-center justify-contents-center flex-column w-100">
+       
+        <!-- Show Text if there are no tasks -->
+        <div id="noTasks" style="text-align: center;" onload="emptyTask()">
+          <h1 class="mainContentH1">Would you like to add a task?</h1>
+          <h2 class="mainContentH2">Click on the “<b>+</b>” button to add a task.</h2>
+        </div>
+        
+        <!-- Display if there are listed and accomplished tasks -->
+
+        <div class="container h-100" id="tasksNotEmpty">
+          <div class="row flex">
+            <div id="hereToDo">
+              <!-- Text Span will display here if there are tasks on the list -->
+            </div>
+          </div>
+            
+            <div id="listedTask">
+              <ul id="itemList">
+                <!-- Tasks will be added here -->
+              </ul>
+            </div>   
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Main Content - NO TASK : END -->
+
+
+  <!-- Add Task Btn -->  
+   <button type="button" class="btn btn-floating btnAddTask" id="openModal">
+      <i class="fa-solid fa-plus"></i>
+   </button>  
+
+
+  <!-- Main Content - ADD TASK : START -->
+
+  <div id="customModal" class="modalBg">
+    <div class="d-flex align-items-center justify-content-center" style="height: 100vh; width: 100vw;" id="newTaskForm">
+      <div class="d-flex flex-column">
+        
+        <!-- New Task Modal -->
+        
+        <div class="newTaskModal d-flex flex-column">
+          <div class="d-flex">
+            <div class="square-container">
+              <div class="disabledSquare"></div>
+            </div>
+            <div class="textarea-container">
+              <textarea type="text" id="newTaskInput" name="newTask" rows="4" class="taskInput w-100" placeholder="What task do you want to add?"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit and Cancel Btn -->
+  
+        <div style="height: 40px; width: 100%;" class="justify-contents-center">
+          <div class="d-flex justify-content-end align-items-end" style="margin-top: 5px;">
+            <button class="closeModal closeNewTask" style="margin-right: 10px;"><i class="fa-solid fa-xmark"></i></button>
+            <button id="btnSubmitTask" class="addNewTask" type="submit" onclick="submitTask()"><i class="fa-solid fa-check"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer>
+    <div>
+      <b>Mikaela Faith Cooper</b> | Final Project | <a href="https://www.figma.com/file/FsdzOEZ8953o5JbYid0C4Y/ToDo-List-(JavaScript%3A-Final-Project)?node-id=1%3A2&t=otmy1W1h4W9WQFKv-1">Figma</a>
+    </div>
+  </footer>
+
+  
+    
+
+    
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

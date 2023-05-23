@@ -1,0 +1,318 @@
+/* Imported fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&family=Space+Mono&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+/* Header, Footer, Body */
+
+header {
+    width: 100%;
+    top: 0;
+}
+  
+footer {
+    background-color: #000000;
+    font-family: 'Space Mono', monospace;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+  
+body {
+    background-color: #FFF8DC;
+    overflow: hidden;
+    /* margin-bottom: 20vh; */
+}
+
+/* NavBar */
+
+.navbar {
+    background-color: #A98ED3;
+    box-shadow:0px 0px 0px 5px #000000 inset;
+    height: 12vh;
+    padding: 0;      
+}
+
+.d-90 {
+    flex: 93.5%;
+    width: 100%;
+    box-sizing: border-box;
+}  
+
+.d-10 {
+    flex: 6.5%;
+    width: 100%;
+    background-color: #7A6795;
+    box-shadow:0px 0px 0px 5px #000000 inset;
+}
+
+.d-10:hover {
+    background-color: #685584;
+}
+
+.navName {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 2vw;
+}
+
+.fa-burger {
+    color: white;
+    font-size: 35px;
+}
+
+/* Side Nav */
+
+.sidenav {
+    height: 25vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #7A6795;
+    box-shadow:0px 0px 0px 5px #000000 inset;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav-open {
+    width: 20vw;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0.5vh;
+    right: 2vw;
+    font-size: 36px;
+    text-align: right;
+}
+
+.fa-xmark {
+    color: #ffffff;
+}
+
+.fa-house {
+    padding-right: 15px;
+}
+
+.navItem {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Sen', sans-serif;
+    font-family: 'Space Mono', monospace;
+    box-shadow: 0px 0px 0px 5px #000000 inset;
+    height: 12vh;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    padding-left: 1vw;
+}
+
+/* Modal */
+
+.modalBg {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+  
+.modalContent {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 30vw;
+    border: 5px solid #000000;
+    box-shadow: 6px 6px 0px #443453;
+    border-radius: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+}
+  
+.closeModal {
+    font-size: 25px;
+    display: block;
+    text-align: right;
+}
+  
+.closeModal:hover, .closeModal:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+
+.left-half, .right-half {
+    height: 80vh;
+    padding: 50px;
+    justify-content: middle;
+}
+  
+.left-half {
+    justify-content: center;
+    align-items: middle;
+    border-left: 5px #000000 solid;
+    border-right: 5px #000000 solid;
+}
+  
+.right-half {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    vertical-align: center;
+    border-right: 5px #000000 solid;
+}
+
+/* Main Content : LEFT PANEL*/
+
+.leftPanelH1 {
+    font-family: 'Sen', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.leftPanelH2 {
+    font-family: 'Space Mono', monospace;
+    color: #000000;
+    font-size: 24px;
+}
+
+.leftInput {
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    height: 55px;
+    border: 4px solid #000000;
+    box-shadow: 6px 6px 0px #443453;
+    padding-left: 10px;
+}
+
+.leftInput:focus {
+    outline: none;
+}
+
+.btnInput {
+    box-shadow: 6px 6px 0px #443453;
+    background-color: #7A6795;
+    border-top: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    border-radius: 0;
+    color: white;
+    font-size: 24px;
+    z-index: 0 !important;
+}
+
+.btnInput:hover {
+    box-shadow: 6px 6px 0px #443453 !important;
+    background-color: #685584;
+    border-top: 4px solid #000000;
+    border-right: 4px solid #000000;
+    border-bottom: 4px solid #000000;
+    color: white;
+}
+
+/* Main Content : RIGHT PANEL*/
+
+.right-half {
+    background: url(../img/checkered-bg-01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.smileyImg {
+    height: 70%;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .left-half {
+      height: 100vh;
+    } 
+    
+    .right-half {
+        display: none !important;
+    }
+
+    .right-half img {
+        display: none;
+    }
+  
+    .navName {
+      font-size: 22px;
+      padding-left: 4vw;
+    }
+
+    .navItem {
+      font-size: 20px;
+    }
+
+    .fa-burger {
+        font-size: 30px;
+    }
+
+    .fa-house {
+        font-size: 20px;
+        margin-left: 1vw;
+    }
+  
+    .sidenav-open {
+      width: 100vw;
+      height: 30vh;
+    }
+  
+    .d-90 {
+      flex: 80%;
+    }
+  
+    .d-10 {
+      flex: 20%;
+    }
+
+    .leftPanelH1 {
+        font-size: 50px;
+    }
+
+    .leftPanelH2 {
+        font-size: 20px;
+    }
+
+    .modalContent {
+        font-size: 18px;
+        width: 90vw;
+        margin: 50% auto;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+  }
