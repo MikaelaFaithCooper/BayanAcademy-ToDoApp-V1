@@ -1,2 +1,4 @@
 # BayanAcademy-ToDoApp-V1
- A final project for Bayan Academy's JavaScript Programming Bootcamp.
+ A final project for Bayan Academy's JavaScript Programming Bootcamp, a thrilling 3-week bootcamp with Bayan Academy, I delved into the depths of JavaScript, mastering its fundamentals and unlocking the power of APIs. As the culmination of this immersive journey, our final challenge awaited: crafting a dynamic todo app.
+
+Armed with HTML, CSS, and JavaScript, I set out to build a user-friendly todo app that would empower individuals to manage their tasks effectively. While time constraints prevented me from fully realizing my vision, I remain determined to revisit this project and elevate its usability in the future. By honing my skills as a web developer, I aim to recreate the app, breathing new life into it and showcasing my growth on this exhilarating coding odyssey.
